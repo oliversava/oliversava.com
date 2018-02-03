@@ -1,0 +1,755 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik|Varela+Round");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+li {
+  list-style: none; }
+
+a {
+  outline: 0;
+  text-decoration: none; }
+  a:active {
+    outline: none; }
+  a:focus {
+    -moz-outline-style: none; }
+
+.container {
+  max-width: 93.5rem;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 1px 2px 19px 0px rgba(0, 0, 0, 0.24); }
+  .container::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.cbp-scroll-header {
+  position: relative;
+  font-family: "Caveat Brush", sans-serif;
+  text-align: center;
+  background-color: white;
+  overflow: hidden;
+  color: #776EA7;
+  max-width: 93.5rem;
+  transition: height 0.3s; }
+  @media only screen and (min-width: 37.5rem) {
+    .cbp-scroll-header {
+      z-index: 10;
+      position: fixed;
+      text-align: center;
+      top: 0;
+      background: linear-gradient(to top left, #8D6D96, #B98CAE);
+      height: 126px;
+      width: 100%;
+      color: white; } }
+
+.cbp-scroll-header.header-shrink {
+  height: 76px; }
+
+.title {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-size: 1.5rem;
+  text-align: center; }
+  @media only screen and (min-width: 37.5rem) {
+    .title {
+      float: left;
+      margin-top: 1.5rem;
+      margin-left: 5.5rem; } }
+
+.type {
+  height: 2rem;
+  width: auto;
+  font-family: "Varela Round", sans-serif;
+  font-size: 0.5rem;
+  letter-spacing: 0.2rem;
+  font-size: 0.5rem;
+  height: auto;
+  width: auto; }
+  @media only screen and (min-width: 37.5rem) {
+    .type {
+      float: left;
+      margin-top: 2.5rem;
+      margin-left: 1.5rem; } }
+
+html {
+  background: #F7FAFC; }
+
+.menu ul {
+  background: #3A205C;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  z-index: 2; }
+  @media only screen and (min-width: 37.5rem) {
+    .menu ul {
+      position: static;
+      background: none;
+      margin-top: 2rem;
+      margin-right: 3rem;
+      float: right;
+      height: auto;
+      width: auto; } }
+.menu li {
+  display: inline-block; }
+.menu a {
+  font-family: "Caveat Brush", sans-serif;
+  font-size: 0.5rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  margin: 0.4rem;
+  float: left; }
+  @media only screen and (min-width: 37.5rem) {
+    .menu a {
+      margin: 0 1rem;
+      font-size: 1rem; }
+      .menu a:hover {
+        transition: all 0.3s;
+        color: #3A205C; } }
+  @media only screen and (min-width: 68.75rem) {
+    .menu a {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media only screen and (min-width: 87.5rem) {
+    .menu a {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+
+.section-heading {
+  font-family: "Caveat Brush", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  background: #674B7C;
+  margin-bottom: 2rem;
+  height: 4rem;
+  width: auto; }
+  @media only screen and (min-width: 37.5rem) {
+    .section-heading {
+      background: none; }
+      .section-heading span {
+        margin-top: 1rem; } }
+
+.new-work, .about, .featured {
+  display: inline-block;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+  color: #674B7C; }
+  @media only screen and (min-width: 37.5rem) {
+    .new-work, .about, .featured {
+      font-size: 2.81rem; } }
+
+.about {
+  color: white; }
+  @media only screen and (min-width: 37.5rem) {
+    .about {
+      font-size: 3.43rem; } }
+
+.featured {
+  color: #674B7C; }
+  @media only screen and (min-width: 37.5rem) {
+    .featured {
+      font-size: 2.81rem; } }
+
+.comics {
+  color: white;
+  display: inline-block;
+  margin-top: 0.8rem;
+  margin-bottom: 2rem; }
+  @media only screen and (min-width: 37.5rem) {
+    .comics {
+      font-size: 2.81rem; } }
+
+#new-work img.remove, #featured img.remove {
+  display: none; }
+@media only screen and (min-width: 37.5rem) {
+  #new-work img.remove, #featured img.remove {
+    display: block; } }
+@media only screen and (min-width: 37.5rem) {
+  #new-work, #featured {
+    padding-right: 2rem;
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+    font-family: "Caveat Brush", sans-serif; } }
+#new-work .section-heading span, #featured .section-heading span {
+  color: white; }
+@media only screen and (min-width: 37.5rem) {
+  #new-work .section-heading span, #featured .section-heading span {
+    display: block;
+    margin-top: 7.5rem;
+    color: #f1eef3;
+    font-size: 6rem; } }
+#new-work .section-title, #featured .section-title {
+  color: #674B7C;
+  font-family: "Caveat Brush", sans-serif;
+  font-size: 2rem;
+  display: block; }
+#new-work .work-items, #featured .work-items {
+  margin: 0 auto;
+  padding: 2rem; }
+  @media only screen and (min-width: 37.5rem) {
+    #new-work .work-items, #featured .work-items {
+      max-width: 40rem; } }
+  #new-work .work-items ul, #featured .work-items ul {
+    font-family: "Varela Round", sans-serif; }
+    #new-work .work-items ul::after, #featured .work-items ul::after {
+      clear: both;
+      content: "";
+      display: table; }
+    @media only screen and (min-width: 68.75rem) {
+      #new-work .work-items ul, #featured .work-items ul {
+        margin-right: 8rem;
+        margin-left: 8rem; } }
+    @media only screen and (min-width: 87.5rem) {
+      #new-work .work-items ul, #featured .work-items ul {
+        margin-right: 3rem;
+        margin-left: 3rem; } }
+    #new-work .work-items ul li, #featured .work-items ul li {
+      line-height: 1.2rem;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      border-radius: 2px; }
+      @media only screen and (min-width: 37.5rem) {
+        #new-work .work-items ul li, #featured .work-items ul li {
+          width: calc(50%);
+          float: left;
+          margin-left: 0rem;
+          height: 3.2rem; } }
+      @media only screen and (min-width: 68.75rem) {
+        #new-work .work-items ul li, #featured .work-items ul li {
+          height: auto;
+          width: calc(45.8333333333%);
+          float: left;
+          margin-left: 0rem;
+          left: calc(4.1666666667% + 0rem);
+          position: relative;
+          padding: 0;
+          margin-top: 0.2rem;
+          margin-bottom: 0.2rem; } }
+      @media only screen and (min-width: 106.25rem) {
+        #new-work .work-items ul li, #featured .work-items ul li {
+          width: calc(29.1666666667%);
+          float: left;
+          margin-left: 0rem;
+          margin-right: 0.5rem;
+          margin-left: 0.5rem; } }
+    #new-work .work-items ul a, #featured .work-items ul a {
+      text-align: center;
+      font-size: 0.7rem;
+      display: inline-block;
+      height: auto;
+      width: 100%;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      color: #776EA7;
+      background: #F8FAFC;
+      letter-spacing: 0.02rem;
+      transition: all 0.25s;
+      border: 1px solid #F4F5F6;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+      border-bottom-left-radius: 2px;
+      border-bottom-right-radius: 2px; }
+      @media only screen and (min-width: 68.75rem) {
+        #new-work .work-items ul a:hover, #featured .work-items ul a:hover {
+          box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
+          transform: translateY(-1px);
+          color: #674B7C; } }
+      @media only screen and (min-width: 106.25rem) {
+        #new-work .work-items ul a, #featured .work-items ul a {
+          font-size: 0.7rem;
+          line-height: 1.2rem; } }
+#new-work .card-row, #featured .card-row {
+  font-family: "Varela Round", sans-serif; }
+  #new-work .card-row::after, #featured .card-row::after {
+    clear: both;
+    content: "";
+    display: table; }
+#new-work .card:hover, #featured .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1); }
+#new-work .card a, #featured .card a {
+  color: #493A55;
+  text-decoration: none; }
+#new-work .view-box, #featured .view-box {
+  position: relative; }
+  #new-work .view-box::after, #featured .view-box::after {
+    clear: both;
+    content: "";
+    display: table; }
+#new-work .tag-source, #featured .tag-source {
+  border-radius: 4px;
+  color: #776EA7;
+  font-size: 13px;
+  font-family: "Caveat Brush", sans-serif;
+  padding: 3px 0;
+  display: inline-block; }
+#new-work .tag-type, #featured .tag-type {
+  background: #776EA7;
+  border-radius: 4px;
+  color: white;
+  font-size: 13px;
+  font-family: "Caveat Brush", sans-serif;
+  margin: 9px;
+  padding: 3px 7px; }
+#new-work .image-thumb, #featured .image-thumb {
+  position: absolute;
+  height: auto;
+  right: 5px;
+  top: 5px; }
+#new-work .card img, #featured .card img {
+  border-radius: 1px;
+  height: auto;
+  -webkit-user-drag: none; }
+#new-work .view-text p, #featured .view-text p {
+  margin-top: 15px; }
+#new-work .view-text, #featured .view-text {
+  float: left;
+  margin: 0 10px;
+  font-size: 12px; }
+#new-work .tag-type, #featured .tag-type {
+  background: #EADDE4;
+  font-size: 10px;
+  display: inline-block; }
+#new-work .description, #featured .description {
+  font-size: 0.8rem;
+  max-width: 350px;
+  margin-top: 10px; }
+#new-work .publish-date, #featured .publish-date {
+  font-size: 10px;
+  margin-top: 10px;
+  color: #674B7C; }
+
+#bio, #contact {
+  background: url(../images/pinkpoly-about.png) no-repeat, linear-gradient(to top, #8D6D96, #B98CAE);
+  background-size: cover;
+  padding-bottom: 3rem; }
+  #bio::after, #contact::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media only screen and (min-width: 37.5rem) {
+    #bio, #contact {
+      padding-bottom: 0; } }
+  @media only screen and (min-width: 68.75rem) {
+    #bio, #contact {
+      padding-bottom: 4rem; } }
+  #bio .about, #contact .about {
+    color: #F5F6F6; }
+  @media only screen and (min-width: 37.5rem) {
+    #bio .about-text, #contact .about-text {
+      padding-top: 0.2rem;
+      height: auto;
+      width: auto;
+      overflow: hidden; } }
+  #bio .social-wrap, #contact .social-wrap {
+    position: relative;
+    margin-top: 10px; }
+  #bio .social-wrap div, #contact .social-wrap div {
+    position: absolute;
+    left: 46%; }
+    #bio .social-wrap div a, #contact .social-wrap div a {
+      margin: 0 10px;
+      opacity: 0.6;
+      transition: all 0.25s; }
+      #bio .social-wrap div a:hover, #contact .social-wrap div a:hover {
+        opacity: 1; }
+  #bio p, #contact p {
+    font-family: "Varela Round", sans-serif;
+    font-size: 0.8rem;
+    color: white;
+    letter-spacing: 0.05rem;
+    text-align: justify;
+    line-height: 1.2rem;
+    padding: 0.5rem 5rem; }
+    @media only screen and (min-width: 37.5rem) {
+      #bio p, #contact p {
+        width: calc(58.3333333333%);
+        float: left;
+        margin-left: 0rem;
+        left: calc(12.5% + 0rem);
+        position: relative; } }
+    @media only screen and (min-width: 68.75rem) {
+      #bio p, #contact p {
+        width: calc(50%);
+        float: left;
+        margin-left: 0rem;
+        left: calc(16.6666666667% + 0rem);
+        position: relative;
+        text-align: center;
+        line-height: 1.6rem; } }
+    @media only screen and (min-width: 87.5rem) {
+      #bio p, #contact p {
+        width: calc(41.6666666667%);
+        float: left;
+        margin-left: 0rem;
+        left: calc(25% + 0rem);
+        position: relative; } }
+    #bio p p + p, #contact p p + p {
+      margin-bottom: 1.5rem; }
+    #bio p a, #contact p a {
+      transition: all 0.25s;
+      color: #FEE2FF; }
+      #bio p a:hover, #contact p a:hover {
+        color: white; }
+
+#featured {
+  padding: 0; }
+  #featured .section-heading span {
+    color: white; }
+  @media only screen and (min-width: 37.5rem) {
+    #featured .section-heading span {
+      display: block;
+      margin-top: 3rem;
+      color: #f1eef3;
+      font-size: 6rem; } }
+  @media only screen and (min-width: 68.75rem) {
+    #featured .work-items ul {
+      left: calc(4.1666666667% + 0rem);
+      position: relative; } }
+  @media only screen and (min-width: 87.5rem) {
+    #featured .work-items ul {
+      left: calc(4.1666666667% + 0rem);
+      position: relative; } }
+  @media only screen and (min-width: 37.5rem) {
+    #featured .work-items ul li {
+      width: calc(100%);
+      float: left;
+      margin-left: 0rem;
+      left: calc(0% + 0rem);
+      position: relative; } }
+  @media only screen and (min-width: 68.75rem) {
+    #featured .work-items ul li {
+      width: calc(100%);
+      float: left;
+      margin-left: 0rem;
+      left: calc(0% + 0rem);
+      position: relative; } }
+  @media only screen and (min-width: 87.5rem) {
+    #featured .work-items ul li {
+      width: calc(45.8333333333%);
+      float: left;
+      margin-left: 0rem; } }
+  #featured .section-title {
+    color: #776EA7; }
+
+#comics, #tv, #theater {
+  background: url(../images/full-wave.png) no-repeat center bottom, linear-gradient(to top, #8D6D96, #B98CAE);
+  background-size: 100%;
+  padding-bottom: 2rem; }
+  @media only screen and (min-width: 37.5rem) {
+    #comics, #tv, #theater {
+      padding-top: 2rem; } }
+  #comics .av-list .comic-item, #tv .av-list .comic-item, #theater .av-list .comic-item {
+    z-index: 1; }
+    @media only screen and (min-width: 68.75rem) {
+      #comics .av-list .comic-item, #tv .av-list .comic-item, #theater .av-list .comic-item {
+        height: 6rem; } }
+    #comics .av-list .comic-item span, #tv .av-list .comic-item span, #theater .av-list .comic-item span {
+      min-width: 230px; }
+  #comics .comic-sub-title, #tv .comic-sub-title, #theater .comic-sub-title {
+    z-index: 1;
+    font-family: "Caveat Brush", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    display: block; }
+  #comics .essays, #tv .essays, #theater .essays {
+    z-index: 1;
+    padding-top: 3rem; }
+    #comics .essays span, #tv .essays span, #theater .essays span {
+      display: block;
+      font-family: "Varela Round", sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: white; }
+  #comics .section-title, #tv .section-title, #theater .section-title {
+    font-family: "Caveat Brush", sans-serif;
+    font-size: 2rem;
+    color: white;
+    display: block; }
+  #comics .essays, #tv .essays, #theater .essays {
+    margin-top: -15px; }
+  #comics ul, #tv ul, #theater ul {
+    z-index: 2;
+    margin: 2rem 1rem; }
+    #comics ul::after, #tv ul::after, #theater ul::after {
+      clear: both;
+      content: "";
+      display: table; }
+    @media only screen and (min-width: 68.75rem) {
+      #comics ul, #tv ul, #theater ul {
+        margin-right: 8rem;
+        margin-left: 8rem; } }
+  #comics .comic-item, #tv .comic-item, #theater .comic-item {
+    font-family: "Varela Round", sans-serif;
+    margin-top: 1rem; }
+    @media only screen and (min-width: 37.5rem) {
+      #comics .comic-item, #tv .comic-item, #theater .comic-item {
+        height: 5.5rem;
+        width: calc(41.6666666667%);
+        float: left;
+        margin-left: 0rem; } }
+    @media only screen and (min-width: 68.75rem) {
+      #comics .comic-item, #tv .comic-item, #theater .comic-item {
+        width: calc(25%);
+        float: left;
+        margin-left: 0rem;
+        height: 3rem;
+        margin-top: 1rem;
+        margin-right: 2rem; } }
+    #comics .comic-item span, #tv .comic-item span, #theater .comic-item span {
+      z-index: 2;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: white;
+      display: block;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem; }
+    #comics .comic-item a, #tv .comic-item a, #theater .comic-item a {
+      z-index: 2;
+      font-size: 0.85rem;
+      color: white;
+      display: inline-block; }
+      #comics .comic-item a:hover, #tv .comic-item a:hover, #theater .comic-item a:hover {
+        transition: 0.2s linear;
+        color: #3A205C; }
+  #comics .interviews, #tv .interviews, #theater .interviews {
+    margin-top: 4rem; }
+    #comics .interviews .comic-item, #tv .interviews .comic-item, #theater .interviews .comic-item {
+      height: auto;
+      width: calc(41.6666666667%);
+      float: left;
+      margin-left: 0rem;
+      border-bottom: none;
+      margin-left: 0;
+      margin-right: 1rem;
+      margin-left: 1rem; }
+      @media only screen and (min-width: 68.75rem) {
+        #comics .interviews .comic-item, #tv .interviews .comic-item, #theater .interviews .comic-item {
+          width: calc(29.1666666667%);
+          float: left;
+          margin-left: 0rem; } }
+  #comics .interviews .section-title, #tv .interviews .section-title, #theater .interviews .section-title {
+    font-size: 1.5rem;
+    display: block; }
+  #comics #best-of, #tv #best-of, #theater #best-of {
+    font-family: "Varela Round", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+
+#tv, #theater {
+  background: url(../images/large-wave.png) no-repeat center bottom;
+  background-size: 100%; }
+  @media only screen and (min-width: 37.5rem) {
+    #tv, #theater {
+      padding-top: 2rem;
+      margin-top: 1rem; } }
+  #tv .section-heading, #theater .section-heading {
+    padding-bottom: 1rem; }
+    #tv .section-heading span, #theater .section-heading span {
+      color: white;
+      font-size: 3rem; }
+    @media only screen and (min-width: 37.5rem) {
+      #tv .section-heading span, #theater .section-heading span {
+        color: #776EA7;
+        font-size: 4rem; } }
+  @media only screen and (min-width: 68.75rem) {
+    #tv .section-heading + ul .comic-item, #theater .section-heading + ul .comic-item {
+      width: calc(29.1666666667%);
+      float: left;
+      margin-left: 0rem; } }
+  #tv .section-title, #theater .section-title {
+    font-family: "Varela Round", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    display: block;
+    color: #776EA7; }
+  #tv .section-av-club, #theater .section-av-club {
+    font-family: "Caveat Brush", sans-serif;
+    color: #776EA7;
+    font-size: 2rem; }
+  #tv .vulture-title, #theater .vulture-title {
+    font-family: "Caveat Brush", sans-serif;
+    color: #776EA7;
+    font-size: 2rem; }
+  #tv .news-organization > .section-title, #theater .news-organization > .section-title {
+    font-family: "Caveat Brush", sans-serif;
+    font-weight: normal;
+    font-size: 1.2rem; }
+  #tv .news-organization + .news-organization > .section-title, #theater .news-organization + .news-organization > .section-title {
+    font-family: "Caveat Brush", sans-serif;
+    font-weight: normal;
+    font-size: 2rem;
+    text-transform: none; }
+  #tv ul, #theater ul {
+    margin-top: 0.5rem;
+    padding-bottom: 2rem; }
+    #tv ul .comic-item, #theater ul .comic-item {
+      height: 1.5rem; }
+      @media only screen and (min-width: 37.5rem) {
+        #tv ul .comic-item, #theater ul .comic-item {
+          width: calc(50%);
+          float: left;
+          margin-left: 0rem; } }
+      @media only screen and (min-width: 68.75rem) {
+        #tv ul .comic-item, #theater ul .comic-item {
+          width: calc(33.3333333333%);
+          float: left;
+          margin-left: 0rem; } }
+      #tv ul .comic-item a, #theater ul .comic-item a {
+        display: inline-block;
+        color: #776EA7; }
+        #tv ul .comic-item a:hover, #theater ul .comic-item a:hover {
+          border-bottom: 1px solid #776EA7;
+          transition: none; }
+  #tv ul.av-recaps .comic-item, #theater ul.av-recaps .comic-item {
+    height: 1.5rem; }
+    @media only screen and (min-width: 37.5rem) {
+      #tv ul.av-recaps .comic-item, #theater ul.av-recaps .comic-item {
+        width: calc(50%);
+        float: left;
+        margin-left: 0rem; } }
+    @media only screen and (min-width: 68.75rem) {
+      #tv ul.av-recaps .comic-item, #theater ul.av-recaps .comic-item {
+        width: calc(41.6666666667%);
+        float: left;
+        margin-left: 0rem; } }
+
+#film, #dance {
+  background: url(../images/small-wave.png) no-repeat center bottom, linear-gradient(to top, #8D6D96, #B98CAE);
+  background-size: 100%;
+  padding-bottom: 3rem;
+  font-family: "Caveat Brush", sans-serif; }
+  @media only screen and (min-width: 37.5rem) {
+    #film, #dance {
+      padding-right: 2rem;
+      padding-bottom: 5rem;
+      padding-left: 2rem; } }
+  #film::after, #dance::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #film .section-heading, #dance .section-heading {
+    background: #674B7C; }
+    #film .section-heading span, #dance .section-heading span {
+      display: inline-block;
+      margin-top: 0.7rem;
+      color: white;
+      font-size: 3rem; }
+    @media only screen and (min-width: 37.5rem) {
+      #film .section-heading, #dance .section-heading {
+        background: none;
+        padding-top: 2rem;
+        padding-bottom: 2rem; } }
+  #film .section-title, #dance .section-title {
+    font-size: 1.5rem;
+    color: white;
+    display: block; }
+  #film .section-title:nth-child(2), #dance .section-title:nth-child(2) {
+    font-size: 1rem;
+    margin-top: 1rem; }
+  #film .list, #dance .list {
+    margin: 1.5rem 2rem 2rem; }
+    @media only screen and (min-width: 37.5rem) {
+      #film .list, #dance .list {
+        width: calc(25%);
+        float: left;
+        margin-left: 0rem;
+        left: calc(8.3333333333% + 0rem);
+        position: relative;
+        margin-right: 3rem;
+        margin-left: 3rem; } }
+    @media only screen and (min-width: 68.75rem) {
+      #film .list, #dance .list {
+        width: calc(25%);
+        float: left;
+        margin-left: 0rem;
+        left: calc(4.1666666667% + 0rem);
+        position: relative;
+        margin: 1.5rem 2rem 8rem; } }
+  #film .item, #dance .item {
+    margin-top: 1rem;
+    font-size: 1rem; }
+    #film .item a, #dance .item a {
+      font-family: "Varela Round", sans-serif;
+      color: white;
+      transition: all 0.25s; }
+      #film .item a:hover, #dance .item a:hover {
+        color: #674B7C; }
+
+#dance {
+  padding: 0;
+  background: url(../images/small-wave.png) no-repeat center bottom, linear-gradient(to top, #8D6D96, #B98CAE);
+  background-size: 100%; }
+  #dance .section-heading {
+    display: block;
+    padding: 1rem 0 1rem; }
+    #dance .section-heading span {
+      font-size: 3rem; }
+  #dance .list {
+    z-index: 1;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem; }
+    @media only screen and (min-width: 37.5rem) {
+      #dance .list {
+        width: calc(41.6666666667%);
+        float: left;
+        margin-left: 0rem;
+        left: calc(8.3333333333% + 0rem);
+        position: relative; } }
+    @media only screen and (min-width: 68.75rem) {
+      #dance .list {
+        width: calc(33.3333333333%);
+        float: left;
+        margin-left: 0rem;
+        left: calc(16.6666666667% + 0rem);
+        position: relative;
+        margin: 1.5rem 1rem 6rem; } }
+
+#theater {
+  background: url(../images/large-wave.png) no-repeat center bottom;
+  background-size: 100%; }
+  @media only screen and (min-width: 37.5rem) {
+    #theater .chi-reader .comic-item {
+      width: calc(25%);
+      float: left;
+      margin-left: 0rem; } }
+  @media only screen and (min-width: 68.75rem) {
+    #theater .chi-reader .comic-item {
+      width: calc(29.1666666667%);
+      float: left;
+      margin-left: 0rem; } }
+  @media only screen and (min-width: 68.75rem) {
+    #theater .chi-reader + ul .comic-item a {
+      display: inline-block;
+      max-width: 250px; } }
+  #theater .small {
+    font-size: 1.5rem; }
+  @media only screen and (min-width: 37.5rem) {
+    #theater ul .comic-item {
+      width: calc(33.3333333333%);
+      float: left;
+      margin-left: 0rem; } }
+  @media only screen and (min-width: 68.75rem) {
+    #theater ul .comic-item {
+      width: calc(45.8333333333%);
+      float: left;
+      margin-left: 0rem; } }
+  #theater ul .comic-item a:hover {
+    border-bottom: none; }
+
+/*# sourceMappingURL=app.css.map */

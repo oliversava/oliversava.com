@@ -1,0 +1,66 @@
+#bio
+	background: url(../images/pinkpoly-about.png) no-repeat, $gradient  
+	background-size: cover
+	padding-bottom: 3rem
+	+clearfix
+	+grid-media($S)
+		padding-bottom: 0
+	+grid-media($M)
+		+padding(2rem 0 4rem)
+
+	.section-heading
+		span
+			font-family: $varela
+			font-size: 2rem
+			letter-spacing: 0.5rem
+
+	.about 
+		color: #F5F6F6
+	.about-text
+		+grid-media($S)
+			+padding(0.2rem null null)	
+			+size(auto auto)
+			overflow: hidden
+
+	.social-wrap
+		position: relative
+		margin-top: 10px
+	.social-wrap div
+		position: absolute
+		left: 46%
+		a
+			margin: 0 10px
+			opacity: .6
+			transition: all 0.25s
+			&:hover
+				opacity: 1
+
+	p
+		font-family: $varela
+		font-size: 0.8rem
+		color: white
+		letter-spacing: 0.05rem
+		text-align: justify
+		line-height: 1.2rem
+		+padding(0.5rem 5rem)
+		+grid-media($S)
+			+grid-column(7)
+			+grid-shift(1.5)
+		+grid-media($M)
+			+grid-column(6)
+			+grid-shift(2)
+			text-align: center
+			line-height: 1.6rem
+		+grid-media($L)
+			+grid-column(5)
+			+grid-shift(3)
+
+		p + p
+			margin-bottom: 1.5rem
+
+		a
+			transition: all 0.25s
+			color: #FEE2FF
+			&:hover
+				color: white
+	

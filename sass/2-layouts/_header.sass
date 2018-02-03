@@ -1,0 +1,44 @@
+.cbp-scroll-header 
+	position: relative
+	font-family: $varela
+	text-align: center
+	background-color: white
+	overflow: hidden
+	color: $primary
+	max-width: 93.5rem
+	transition: height 0.3s
+	+grid-media($S)
+		z-index: 10
+		position: fixed
+		text-align: center
+		top: 0
+		background: linear-gradient(to top left, #8D6D96, #B98CAE)
+		height: 126px
+		width: 100%
+		color: white
+
+
+.cbp-scroll-header.header-shrink
+	height: 76px
+
+.title
+	display: $hybrid
+	+margin(1rem null 0.3rem null)
+	font-size: 1.5rem
+	text-align: center
+	+grid-media($S)
+		float: left
+		+margin(1.5rem null null 5.5rem)
+		
+.type
+	+size(auto 2rem)
+	font-family: $caveat-brush
+	font-size: 0.8rem
+	letter-spacing: .2rem
+	+size(auto auto)
+	+grid-media($S)
+		float: left
+		+margin(2.1rem null null 1.5rem)
+
+
+

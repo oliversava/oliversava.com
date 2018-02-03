@@ -1,0 +1,32 @@
+#theater
+	background: url(../images/large-wave.png) no-repeat center bottom
+	background-size: 100%
+	@extend #tv
+	.chi-reader
+		.comic-item
+			
+			+grid-media($S)
+				+grid-column(3)
+			+grid-media($M)
+				+grid-column(3.5)
+	
+	.chi-reader + ul
+		.comic-item
+			+grid-media($M)
+				a
+					display: $hybrid
+					max-width: 250px
+	
+	.small
+		font-size: 1.5rem
+	
+	ul
+		+padding(null)
+		.comic-item
+			+grid-media($S)
+				+grid-column(4)
+			+grid-media($M)
+				+grid-column(5.5)
+			a
+				&:hover
+					border-bottom: none

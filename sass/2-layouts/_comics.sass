@@ -1,0 +1,117 @@
+#comics
+	background: url(../images/full-wave.png) no-repeat center bottom, $gradient  
+	background-size: 100%
+	
+	+padding(null null 2rem)
+	+grid-media($S)
+		+padding(2rem null null)
+
+	.av-list .comic-item
+		z-index: 1
+		+grid-media($M)
+			height: 6rem
+		span
+			min-width: 230px
+	.comic-sub-title
+		z-index: 1
+		font-family: $varela
+		font-size: 1.5rem
+		color: white
+		display: block
+	
+	.essays
+		z-index: 1
+		padding-top: 3rem
+		span
+			display: block
+			font-family: $varela
+			font-size: 0.9rem
+			font-weight: 600
+			letter-spacing: 1px
+			text-transform: uppercase
+			color: white
+
+	.section-heading
+		span
+			font-family: $varela
+			color: white
+		+grid-media($S)
+			span
+				display: block
+				+margin(4rem null null)
+				color: white
+				font-size: 2rem
+				font-family: $varela
+				letter-spacing: 0.5rem
+			
+	.section-title
+		font-family: $varela
+		font-size: 1.5rem
+		color: white
+		display: block
+	
+	.essays
+		margin-top: -15px
+
+	ul
+		z-index: 2
+		+clearfix
+		+margin(2rem 1rem)
+		+grid-media($M)
+			+margin(null 8rem)
+	.comic-item
+		font-family: $varela
+		+grid-media($S)
+		+margin(1rem null null)
+		+grid-media($S)
+			height: 5.5rem
+			+grid-column(5)
+		+grid-media($M)
+			+grid-column(3)
+			height: 3rem
+			+margin(1rem 2rem null null)
+
+		span
+			z-index: 2
+			font-size: 0.9rem
+			font-weight: 600
+			text-transform: uppercase
+			letter-spacing: 1px
+			color: white
+			display: block
+			+margin(0.5rem null)
+			
+		a
+			z-index: 2
+			font-size: 0.85rem
+			color: white
+			display: $hybrid
+			&:hover
+				transition: .2s linear
+				color: $tertiary
+		
+
+	.interviews 
+		+margin(4rem null null)
+		.comic-item
+			height: auto
+			+grid-column(5)
+			border-bottom: none
+			margin-left: 0
+			+margin(null 1rem)
+			+grid-media($M)
+				+grid-column(3.5)
+	
+	
+	.interviews .section-title
+		font-size: 1.5rem
+		display: block
+
+	#best-of
+		font-family: $varela
+		font-size: 0.9rem
+		font-weight: 600
+		letter-spacing: 1px
+		text-transform: uppercase
+
+	

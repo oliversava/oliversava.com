@@ -1,0 +1,172 @@
+#new-work
+	+clearfix
+	+padding(null 2rem 5rem 2rem)
+
+	+grid-media($S)
+		+padding(5rem 0rem 5rem 0	rem)
+
+
+	img.remove
+		display: none
+
+	+grid-media($S)
+		img.remove
+			display: block
+
+	.section-heading
+		span
+			color: white
+		+grid-media($S)
+			span
+				display: block
+				+margin(7.5rem null null)
+				color: $primary
+				font-size: 2rem
+				font-family: $varela
+				letter-spacing: 0.5rem
+	
+	.section-title
+		color: $secondary
+		font-family: $caveat-brush
+		font-size: 2rem
+		display: block
+
+	.work-items 
+		margin: 0 auto
+		+padding(1rem)
+		+grid-media($S)
+			+padding(1rem)
+		// +grid-media($S)
+		// 	+grid-column(5)
+		// 	+padding(1rem)
+
+		ul
+			+clearfix
+			font-family: $varela
+			+grid-media($M)
+				+margin(null 8rem)
+			+grid-media($L)
+				+margin(null 3rem)
+			li
+				line-height: 1.2rem
+				+margin(0.2rem null)
+				border-radius: 2px
+				+grid-media($S)
+					+grid-column(6)
+					height: 3.2rem
+				+grid-media($M)
+					height: auto
+					+grid-column(5.5)
+					+grid-shift(0.5)
+					+padding(0)
+					+margin(0.2rem null)
+				+grid-media($XL)
+					+grid-column(3.5)	
+					+margin(null 0.5rem)
+			a
+				text-align: center
+				font-size: 0.7rem	
+				display: $hybrid
+				+size(100% auto)
+				+padding(1rem null)
+				color: #776EA7
+				background: #F8FAFC
+				letter-spacing: .02rem 
+				transition: all 0.25s
+				border: 1px solid #F4F5F6
+				+border-top-radius(2px)
+				+border-bottom-radius(2px)
+				+grid-media($M)
+					&:hover
+						box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05)
+						transform: translateY(-1px)
+						color: $secondary
+				+grid-media($XL)
+					font-size: .7rem
+					line-height: 1.2rem
+
+	
+	.card-row
+		+clearfix
+		font-family: $varela
+
+	
+	.card 
+		// background: #F8FAFC
+		border: 1px solid #F4F5F6
+		border-radius: 2px
+		box-shadow: none
+		height: 7.25rem
+		margin: 10px 5px 
+		transition: all 0.25s
+		// box-shadow: 0 0 10px 2px rgba(0,0,0, 0.05)
+		+grid-media($M)
+			+grid-column(5.5)
+			+grid-shift(0.5)
+		+grid-media($L)
+			+grid-column(5)
+			+grid-shift(1)
+				
+	.card:hover
+		transform: translateY(-2px)
+		box-shadow: 0 0 10px 2px rgba(0,0,0, 0.10)
+			
+	.card a 
+		color: #493A55
+		text-decoration: none
+
+	.view-box
+		+clearfix
+		position: relative
+
+	.tag-source
+		border-radius: 4px
+		color: #776EA7
+		font-size: 13px
+		font-family: $caveat-brush
+		padding: 3px 0
+		display: inline-block
+
+	.tag-type
+		background: #776EA7
+		border-radius: 4px
+		color: white
+		font-size: 13px
+		font-family: $caveat-brush
+		margin: 6px 9px 9px
+		padding: 1px 6px
+
+	.image-thumb 
+
+		position: absolute
+		height: auto
+		right: 5px
+		top: 5px 
+
+	.card img
+		border-radius: 1px
+		height: auto
+		-webkit-user-drag: none
+
+	.view-text p
+		margin-top: 15px
+
+	.view-text 
+		float: left
+		margin: 0 10px
+		font-size: 12px
+
+	.tag-type
+		background: #C2A1C7
+		font-size: 10px
+		display: inline-block
+
+	.description
+		font-size: 0.8rem
+		max-width: 310px
+		margin-top: 10px
+
+	.publish-date
+		font-size: 10px
+		margin-top: 10px
+		color: $secondary

@@ -1,0 +1,52 @@
+#film
+	background: url(../images/small-wave.png) no-repeat center bottom, $gradient  
+	background-size: 100%
+	+padding(null null 3rem)
+	+grid-media($S)
+		+padding(null 2rem 5rem 2rem)
+	font-family: $varela
+	+clearfix
+	
+	.section-heading
+		background: $secondary
+		span
+			display: $hybrid
+			+margin(0.7rem null null)
+			color: white
+			font-size: 3rem
+		+grid-media($S)
+			background: none
+			+padding(2rem null)
+			font-family: $varela
+			letter-spacing: 0.5rem
+		
+	.section-title
+		font-size: 1.5rem
+		color: white
+		display: block
+	
+	.section-title:nth-child(2)
+		font-size: 1rem
+		+margin(1rem null null)
+			
+	.list
+		+margin(1.5rem 2rem 2rem)
+		+grid-media($S)
+			+grid-column(3)
+			+grid-shift(1)
+			+margin(null 3rem)
+			
+		+grid-media($M)
+			+grid-column(3)
+			+grid-shift(0.5)
+			+margin(1.5rem 2rem 8rem)
+
+	.item
+		+margin(1rem null null)
+		font-size: 1rem
+		a
+			font-family: $varela
+			color: white
+			transition: all 0.25s
+			&:hover
+				color: $secondary

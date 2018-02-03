@@ -1,0 +1,79 @@
+#tv 
+	background: url(../images/large-wave.png) no-repeat center bottom
+	background-size: 100%
+	@extend #comics
+	+grid-media($S)
+		padding-top: 2rem
+		+margin(1rem null null)
+		
+	.section-heading
+		+padding(null null 1rem)
+		span
+			color: white
+			font-size: 3rem
+		+grid-media($S)
+			span
+				color: $primary
+				font-size: 2rem
+		
+	.section-heading + ul
+		.comic-item
+			+grid-media($M)
+				+grid-column(3.5)
+	
+	.section-title
+		font-family: $varela
+		font-size: 0.9rem
+		font-weight: 600
+		letter-spacing: 1px
+		text-transform: uppercase
+		+margin(2rem null null)
+		display: block
+		color: $primary
+
+	.section-av-club
+		font-family: $varela
+		color: $primary
+		font-size: 1.5rem
+
+	.vulture-title
+		font-family: $varela
+		color: $primary
+		font-size: 1.5rem
+
+	.news-organization > .section-title
+		font-family: $varela
+		font-weight: normal
+		font-size: 1.2rem
+
+	.news-organization + .news-organization > .section-title
+		font-family: $varela
+		font-weight: normal
+		font-size: 1.5rem
+		text-transform: none
+
+
+	ul 
+		+margin(0.5rem null null)
+		+padding(null null 2rem)
+		.comic-item
+
+			height: 1.5rem
+			+grid-media($S)
+				+grid-column(6)
+			+grid-media($M)
+				+grid-column(4)
+			a 
+				display: inline-block
+				color: $primary
+				&:hover
+					border-bottom: 1px solid $primary
+					transition: none
+	ul.av-recaps
+		.comic-item
+
+			height: 1.5rem
+			+grid-media($S)
+				+grid-column(6)
+			+grid-media($M)
+				+grid-column(5)

@@ -1,0 +1,32 @@
+#dance
+	@extend #film
+	+padding(0)
+	background: url(../images/small-wave.png) no-repeat center bottom, $gradient  
+	background-size: 100%
+
+	.section-heading
+		display: block
+		padding: 1rem 0 1rem
+		span
+			font-family: $varela
+			color: white
+		+grid-media($S)
+			span
+				display: block
+				+margin(4rem null 2rem)
+				color: white
+				font-size: 2rem
+				font-family: $varela
+				letter-spacing: 0.5rem
+	
+	.list
+		z-index: 1
+		+margin(1.5rem null 2rem)
+		+grid-media($S)
+			+grid-column(5)
+			+grid-shift(1)
+			
+		+grid-media($M)
+			+grid-column(4)
+			+grid-shift(2)
+			+margin(1.5rem 1rem 6rem)

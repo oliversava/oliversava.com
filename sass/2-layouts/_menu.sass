@@ -1,0 +1,32 @@
+.menu
+	ul
+		background: $tertiary
+		text-align: center
+		+position(fixed, null null 0 null)
+		+size(100% auto)
+		z-index: 2
+		+grid-media($S)
+			+position(static, null null null null)
+			background: none
+			+margin(2rem 3rem null null)
+			float: right
+			+size(auto auto)
+	li
+		display: inline-block
+	a
+		font-family: $varela
+		font-size: .5rem
+		letter-spacing: .1rem
+		color: white
+		+margin(0.4rem 0.4rem)
+		float: left
+		+grid-media($S)
+			+margin(0 1rem)
+			font-size: 1rem
+			&:hover
+				transition: all 0.3s
+				color: $tertiary
+		+grid-media($S)
+			+margin(null 0.5rem)
+		+grid-media($M)
+			+margin(null 1rem)
