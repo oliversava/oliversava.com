@@ -667,8 +667,6 @@ html {
     font-size: 1.5rem;
     color: white;
     display: block; }
-  #comics .essays, #tv .essays, #theater .essays {
-    margin-top: -15px; }
   #comics ul, #tv ul, #theater ul {
     z-index: 2;
     margin: 2rem 1rem; }
@@ -678,7 +676,6 @@ html {
       display: table; }
     @media only screen and (min-width: 68.75rem) {
       #comics ul, #tv ul, #theater ul {
-        margin-right: 8rem;
         margin-left: 8rem; } }
   #comics .comic-item, #tv .comic-item, #theater .comic-item {
     font-family: "Varela Round", sans-serif;
@@ -715,6 +712,16 @@ html {
       #comics .comic-item a:hover, #tv .comic-item a:hover, #theater .comic-item a:hover {
         transition: 0.2s linear;
         color: #3A205C; }
+  @media only screen and (min-width: 37.5rem) {
+    #comics ul.essays .comic-item, #tv ul.essays .comic-item, #theater ul.essays .comic-item {
+      width: calc(33.33333%);
+      float: left;
+      margin-left: 0rem; } }
+  @media only screen and (min-width: 68.75rem) {
+    #comics ul.essays .comic-item, #tv ul.essays .comic-item, #theater ul.essays .comic-item {
+      width: calc(33.33333%);
+      float: left;
+      margin-left: 0rem; } }
   #comics .interviews, #tv .interviews, #theater .interviews {
     margin-top: 4rem; }
     #comics .interviews .comic-item, #tv .interviews .comic-item, #theater .interviews .comic-item {
@@ -744,6 +751,10 @@ html {
 #tv, #theater {
   background: url(../images/large-wave.png) no-repeat center bottom;
   background-size: 100%; }
+  #tv::after, #theater::after {
+    clear: both;
+    content: "";
+    display: table; }
   @media only screen and (min-width: 37.5rem) {
     #tv, #theater {
       padding-top: 2rem;
@@ -771,6 +782,10 @@ html {
     margin-top: 2rem;
     display: block;
     color: #776EA7; }
+  #tv .podcasts, #theater .podcasts {
+    font-size: 1.5rem;
+    letter-spacing: 0px;
+    margin-top: 0; }
   #tv .section-av-club, #theater .section-av-club {
     font-family: "Varela Round", sans-serif;
     color: #776EA7;
@@ -779,10 +794,21 @@ html {
     font-family: "Varela Round", sans-serif;
     color: #776EA7;
     font-size: 1.5rem; }
+  #tv .vulture-title + .section-title, #theater .vulture-title + .section-title {
+    font-size: 0.5rem; }
+  @media only screen and (min-width: 37.5rem) {
+    #tv .news-organization, #theater .news-organization {
+      width: calc(33.33333%);
+      float: left;
+      margin-left: 0rem; } }
+  @media only screen and (min-width: 68.75rem) {
+    #tv ul.vulture, #theater ul.vulture {
+      margin-right: 3rem;
+      margin-left: 8rem; } }
   #tv .news-organization > .section-title, #theater .news-organization > .section-title {
     font-family: "Varela Round", sans-serif;
     font-weight: normal;
-    font-size: 1.2rem; }
+    font-size: 0.9rem; }
   #tv .news-organization + .news-organization > .section-title, #theater .news-organization + .news-organization > .section-title {
     font-family: "Varela Round", sans-serif;
     font-weight: normal;
@@ -821,6 +847,46 @@ html {
         width: calc(41.66667%);
         float: left;
         margin-left: 0rem; } }
+  @media only screen and (min-width: 37.5rem) {
+    #tv ul.reviews .comic-item, #theater ul.reviews .comic-item {
+      width: calc(50%);
+      float: left;
+      margin-left: 0rem; } }
+  @media only screen and (min-width: 68.75rem) {
+    #tv ul.reviews .comic-item, #theater ul.reviews .comic-item {
+      width: calc(41.66667%);
+      float: left;
+      margin-left: 0rem; } }
+  @media only screen and (min-width: 37.5rem) {
+    #tv ul.dvr-club .comic-item, #theater ul.dvr-club .comic-item {
+      width: calc(50%);
+      float: left;
+      margin-left: 0rem; } }
+  @media only screen and (min-width: 68.75rem) {
+    #tv ul.dvr-club .comic-item, #theater ul.dvr-club .comic-item {
+      width: calc(41.66667%);
+      float: left;
+      margin-left: 0rem; } }
+  @media only screen and (min-width: 37.5rem) {
+    #tv ul.expert .comic-item, #theater ul.expert .comic-item {
+      width: calc(100%);
+      float: left;
+      margin-left: 0rem; } }
+  @media only screen and (min-width: 68.75rem) {
+    #tv ul.expert .comic-item, #theater ul.expert .comic-item {
+      width: calc(100%);
+      float: left;
+      margin-left: 0rem; } }
+  @media only screen and (min-width: 37.5rem) {
+    #tv .news-organization .comic-item, #theater .news-organization .comic-item {
+      width: calc(66.66667%);
+      float: left;
+      margin-left: 0rem; } }
+  @media only screen and (min-width: 68.75rem) {
+    #tv .news-organization .comic-item, #theater .news-organization .comic-item {
+      width: calc(66.66667%);
+      float: left;
+      margin-left: 0rem; } }
 
 #film, #dance {
   background: url(../images/small-wave.png) no-repeat center bottom, linear-gradient(to top, #8D6D96, #B98CAE);
@@ -956,5 +1022,31 @@ html {
       margin-left: 0rem; } }
   #theater ul .comic-item a:hover {
     border-bottom: none; }
+  #theater ul.interviews {
+    margin-top: 2rem; }
+  #theater ul.chi-reader span {
+    font-size: 1.5rem;
+    font-weight: normal; }
+  #theater ul.interviews .selected {
+    font-size: 0.9rem;
+    font-weight: normal; }
+  #theater ul.interviews .theater-beat {
+    font-weight: normal; }
+  #theater ul .tribune {
+    font-size: 1.5rem;
+    font-weight: normal; }
+  #theater ul .time-out {
+    font-size: 1.5rem;
+    font-weight: normal; }
+  #theater ul .small {
+    font-size: 0.9rem;
+    font-weight: normal; }
+  #theater ul.interviews .performer {
+    font-weight: normal;
+    font-size: 0.9rem; }
+  #theater .podcasts {
+    font-size: 1.5rem;
+    font-weight: normal;
+    letter-spacing: 1px; }
 
 /*# sourceMappingURL=app.css.map */

@@ -50,15 +50,15 @@
 		color: white
 		display: block
 	
-	.essays
-		margin-top: -15px
+	
+		
 
 	ul
 		z-index: 2
 		+clearfix
 		+margin(2rem 1rem)
 		+grid-media($M)
-			+margin(null 8rem)
+			+margin(null null null 8rem)
 	.comic-item
 		font-family: $varela
 		+grid-media($S)
@@ -89,6 +89,15 @@
 			&:hover
 				transition: .2s linear
 				color: $tertiary
+		
+	ul.essays
+		.comic-item
+			+grid-media($S)
+				+grid-column(4)
+			+grid-media($M)
+				+grid-column(4)
+
+
 		
 
 	.interviews 

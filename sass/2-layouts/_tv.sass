@@ -1,4 +1,5 @@
 #tv 
+	+clearfix
 	background: url(../images/large-wave.png) no-repeat center bottom
 	background-size: 100%
 	@extend #comics
@@ -20,7 +21,7 @@
 		.comic-item
 			+grid-media($M)
 				+grid-column(3.5)
-	
+			
 	.section-title
 		font-family: $varela
 		font-size: 0.9rem
@@ -31,6 +32,11 @@
 		display: block
 		color: $primary
 
+	.podcasts
+		font-size: 1.5rem
+		letter-spacing: 0px
+		margin-top: 0
+
 	.section-av-club
 		font-family: $varela
 		color: $primary
@@ -40,11 +46,23 @@
 		font-family: $varela
 		color: $primary
 		font-size: 1.5rem
+	
+	.vulture-title + .section-title
+		font-size: 0.5rem
+
+	.news-organization
+		+grid-media($S)
+			+grid-column(4)
+
+	ul.vulture
+		+grid-media($M)
+			+margin(null 3rem null 8rem)
+
 
 	.news-organization > .section-title
 		font-family: $varela
 		font-weight: normal
-		font-size: 1.2rem
+		font-size: 0.9rem
 
 	.news-organization + .news-organization > .section-title
 		font-family: $varela
@@ -69,11 +87,41 @@
 				&:hover
 					border-bottom: 1px solid $primary
 					transition: none
+
 	ul.av-recaps
 		.comic-item
-
 			height: 1.5rem
 			+grid-media($S)
 				+grid-column(6)
 			+grid-media($M)
 				+grid-column(5)
+
+	ul.reviews
+		.comic-item
+			+grid-media($S)
+				+grid-column(6)
+			+grid-media($M)
+				+grid-column(5)
+
+	ul.dvr-club
+		.comic-item
+			+grid-media($S)
+				+grid-column(6)
+			+grid-media($M)
+				+grid-column(5)
+
+	ul.expert
+		.comic-item
+			+grid-media($S)
+				+grid-column(12)
+			+grid-media($M)
+				+grid-column(12)
+
+	.news-organization
+		.comic-item
+			+grid-media($S)
+				+grid-column(8)
+			+grid-media($M)
+				+grid-column(8)
+
+
