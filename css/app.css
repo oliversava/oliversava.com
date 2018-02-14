@@ -41,13 +41,13 @@ a {
       position: fixed;
       text-align: center;
       top: 0;
-      background: linear-gradient(to top left, #8D6D96, #B98CAE);
-      height: 126px;
+      background: #674B7C;
+      height: 96px;
       width: 100%;
       color: white; } }
 
 .cbp-scroll-header.header-shrink {
-  height: 76px; }
+  height: 66px; }
 
 .title {
   display: inline-block;
@@ -58,8 +58,8 @@ a {
   @media only screen and (min-width: 37.5rem) {
     .title {
       float: left;
-      margin-top: 1.5rem;
-      margin-left: 5.5rem; } }
+      margin-top: 1rem;
+      margin-left: 2.5rem; } }
 
 .type {
   height: 2rem;
@@ -72,7 +72,7 @@ a {
   @media only screen and (min-width: 37.5rem) {
     .type {
       float: left;
-      margin-top: 2.1rem;
+      margin-top: 1.7rem;
       margin-left: 1.5rem; } }
 
 html {
@@ -90,7 +90,7 @@ html {
     .menu ul {
       position: static;
       background: none;
-      margin-top: 2rem;
+      margin-top: 1.5rem;
       margin-right: 3rem;
       float: right;
       height: auto;
@@ -106,19 +106,15 @@ html {
   float: left; }
   @media only screen and (min-width: 37.5rem) {
     .menu a {
-      margin: 0 1rem;
-      font-size: 1rem; }
+      margin: 0.3rem 0.5rem 0;
+      font-size: 0.7rem; }
       .menu a:hover {
         transition: all 0.3s;
-        color: #3A205C; } }
-  @media only screen and (min-width: 37.5rem) {
-    .menu a {
-      margin-right: 0.5rem;
-      margin-left: 0.5rem; } }
+        color: #FEE2FF; } }
   @media only screen and (min-width: 68.75rem) {
     .menu a {
-      margin-right: 1rem;
-      margin-left: 1rem; } }
+      margin: 0 0.8rem;
+      font-size: 1rem; } }
 
 .section-heading {
   font-family: "Caveat Brush", sans-serif;
@@ -714,14 +710,28 @@ html {
         color: #3A205C; }
   @media only screen and (min-width: 37.5rem) {
     #comics ul.essays .comic-item, #tv ul.essays .comic-item, #theater ul.essays .comic-item {
-      width: calc(33.33333%);
+      width: calc(50%);
       float: left;
       margin-left: 0rem; } }
   @media only screen and (min-width: 68.75rem) {
     #comics ul.essays .comic-item, #tv ul.essays .comic-item, #theater ul.essays .comic-item {
-      width: calc(33.33333%);
+      width: calc(50%);
+      float: left;
+      margin-left: 0rem;
+      margin: 1rem 2rem 1rem 0;
+      height: 0; } }
+  @media only screen and (min-width: 37.5rem) {
+    #comics ul.vice .comic-item, #tv ul.vice .comic-item, #theater ul.vice .comic-item {
+      width: calc(41.66667%);
       float: left;
       margin-left: 0rem; } }
+  @media only screen and (min-width: 68.75rem) {
+    #comics ul.vice .comic-item, #tv ul.vice .comic-item, #theater ul.vice .comic-item {
+      width: calc(50%);
+      float: left;
+      margin-left: 0rem;
+      margin: 1rem 2rem 1rem 0;
+      height: 0; } }
   #comics .interviews, #tv .interviews, #theater .interviews {
     margin-top: 4rem; }
     #comics .interviews .comic-item, #tv .interviews .comic-item, #theater .interviews .comic-item {
@@ -738,6 +748,20 @@ html {
           width: calc(29.16667%);
           float: left;
           margin-left: 0rem; } }
+  #comics .interviews + ul, #tv .interviews + ul, #theater .interviews + ul {
+    margin-top: 2rem; }
+    @media only screen and (min-width: 37.5rem) {
+      #comics .interviews + ul .comic-item, #tv .interviews + ul .comic-item, #theater .interviews + ul .comic-item {
+        width: calc(50%);
+        float: left;
+        margin-left: 0rem; } }
+    @media only screen and (min-width: 68.75rem) {
+      #comics .interviews + ul .comic-item, #tv .interviews + ul .comic-item, #theater .interviews + ul .comic-item {
+        width: calc(50%);
+        float: left;
+        margin-left: 0rem;
+        margin: 1rem 2rem 1rem 0;
+        height: 0; } }
   #comics .interviews .section-title, #tv .interviews .section-title, #theater .interviews .section-title {
     font-size: 1.5rem;
     display: block; }
@@ -831,7 +855,9 @@ html {
           margin-left: 0rem; } }
       #tv ul .comic-item a, #theater ul .comic-item a {
         display: inline-block;
-        color: #776EA7; }
+        color: #776EA7;
+        border-bottom: 1px solid transparent;
+        transition: all 0.25s; }
         #tv ul .comic-item a:hover, #theater ul .comic-item a:hover {
           border-bottom: 1px solid #776EA7;
           transition: none; }
@@ -994,34 +1020,23 @@ html {
 #theater {
   background: url(../images/large-wave.png) no-repeat center bottom;
   background-size: 100%; }
-  @media only screen and (min-width: 37.5rem) {
-    #theater .chi-reader .comic-item {
-      width: calc(25%);
+  @media only screen and (min-width: 68.75rem) {
+    #theater .chi-reader + ul .comic-item {
+      width: calc(41.66667%);
       float: left;
       margin-left: 0rem; } }
   @media only screen and (min-width: 68.75rem) {
-    #theater .chi-reader .comic-item {
-      width: calc(29.16667%);
+    #theater ul.chi-reader .comic-item {
+      width: calc(41.66667%);
       float: left;
       margin-left: 0rem; } }
   @media only screen and (min-width: 68.75rem) {
-    #theater .chi-reader + ul .comic-item a {
-      display: inline-block;
-      max-width: 250px; } }
+    #theater ul .comic-item {
+      width: calc(41.66667%);
+      float: left;
+      margin-left: 0rem; } }
   #theater .small {
     font-size: 1.5rem; }
-  @media only screen and (min-width: 37.5rem) {
-    #theater ul .comic-item {
-      width: calc(33.33333%);
-      float: left;
-      margin-left: 0rem; } }
-  @media only screen and (min-width: 68.75rem) {
-    #theater ul .comic-item {
-      width: calc(45.83333%);
-      float: left;
-      margin-left: 0rem; } }
-  #theater ul .comic-item a:hover {
-    border-bottom: none; }
   #theater ul.interviews {
     margin-top: 2rem; }
   #theater ul.chi-reader span {
