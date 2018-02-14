@@ -50,8 +50,6 @@
 		color: white
 		display: block
 	
-	
-		
 
 	ul
 		z-index: 2
@@ -93,12 +91,20 @@
 	ul.essays
 		.comic-item
 			+grid-media($S)
-				+grid-column(4)
+				+grid-column(6)
 			+grid-media($M)
-				+grid-column(4)
+				+grid-column(6)
+				+margin(1rem 2rem 1rem 0)
+				height: 0
 
-
-		
+	ul.vice 
+		.comic-item
+			+grid-media($S)
+				+grid-column(5)
+			+grid-media($M)
+				+grid-column(6)
+				+margin(1rem 2rem 1rem 0)
+				height: 0
 
 	.interviews 
 		+margin(4rem null null)
@@ -111,6 +117,15 @@
 			+grid-media($M)
 				+grid-column(3.5)
 	
+	.interviews + ul
+		margin-top: 2rem
+		.comic-item
+			+grid-media($S)
+				+grid-column(6)
+			+grid-media($M)
+				+grid-column(6)
+				+margin(1rem 2rem 1rem 0)
+				height: 0
 	
 	.interviews .section-title
 		font-size: 1.5rem
