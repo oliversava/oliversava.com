@@ -375,17 +375,53 @@ html {
       width: auto;
       overflow: hidden; } }
   #bio .social-wrap, #contact .social-wrap {
-    position: relative;
-    margin-top: 10px; }
-  #bio .social-wrap div, #contact .social-wrap div {
-    position: absolute;
-    left: 46%; }
-    #bio .social-wrap div a, #contact .social-wrap div a {
+    width: 150px;
+    display: block;
+    margin: 10px auto 0; }
+    #bio .social-wrap a, #contact .social-wrap a {
       margin: 0 10px;
       opacity: 0.6;
       transition: all 0.25s; }
-      #bio .social-wrap div a:hover, #contact .social-wrap div a:hover {
+      #bio .social-wrap a:hover, #contact .social-wrap a:hover {
         opacity: 1; }
+  #bio .resume, #contact .resume {
+    width: 153px;
+    color: black;
+    position: relative;
+    margin: 40px auto 0; }
+    #bio .resume .download, #contact .resume .download {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      height: 32px;
+      border-radius: 5px;
+      background: white;
+      color: #776EA7;
+      font-family: "Caveat Brush", sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.05rem;
+      transition: all 0.25s; }
+      #bio .resume .download:hover, #contact .resume .download:hover {
+        box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.1); }
+      #bio .resume .download:before, #contact .resume .download:before {
+        content: "";
+        width: 50px;
+        height: 32px;
+        display: inline-block;
+        background-color: #CC9AB5;
+        border-radius: 5px 0 0 5px;
+        transition: all 0.25s; }
+      #bio .resume .download:hover:before, #contact .resume .download:hover:before {
+        background-color: #e29ec3; }
+      #bio .resume .download span, #contact .resume .download span {
+        position: absolute;
+        display: inline-block;
+        top: 8px;
+        right: 5px; }
+    #bio .resume img, #contact .resume img {
+      position: absolute;
+      top: 6px;
+      left: 16px; }
   #bio p, #contact p {
     font-family: "Varela Round", sans-serif;
     font-size: 0.8rem;
