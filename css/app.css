@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik|Varela+Round");
+@import url("https://fonts.googleapis.com/css?family=Caveat+Brush");
 * {
   margin: 0;
   padding: 0;
@@ -421,7 +422,7 @@ html {
     #bio .resume img, #contact .resume img {
       position: absolute;
       top: 6px;
-      left: 16px; }
+      left: 25px; }
   #bio p, #contact p {
     font-family: "Varela Round", sans-serif;
     font-size: 0.8rem;
